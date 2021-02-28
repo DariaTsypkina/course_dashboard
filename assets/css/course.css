@@ -1,0 +1,234 @@
+/* Вся страница */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1.5fr;
+    grid-template-rows: 1fr;
+}
+
+/* Общее оформление ссылок */
+a {
+    text-decoration: none;
+}
+
+/* Общее оформление списков */
+li {
+    list-style-type: none;
+}
+
+/* Шапка */
+.hd {
+    background-color: white;
+}
+
+/* Навигация */
+.nav {
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: minmax(max-content, 1fr);
+    grid-template-rows: 1fr 3fr 1.5fr;
+    align-items: space-between;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Верх меню */
+ul.menu1 li {
+    margin-bottom: 5vh;
+}
+
+
+/* Кнопка О */
+.o {
+    padding: 0.75vh 0.75vw 0.75vh 0.75vw;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+
+    background: #5E81F4;
+    border-radius: 12px;
+}
+
+/* Шрифты шапки */
+.ohara,
+.join,
+.menu2,
+.menu3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+/* Вес шрифтов */
+.ohara,
+.join {
+    font-weight: 600;
+}
+
+.menu2 {
+    text-align: start;
+}
+
+.menu__link {
+    font-weight: 500;
+    color: #8DA1B5;
+}
+
+/* Охара */
+.ohara {
+    padding: 0.75vh 0.75vw 0.75vh 0.75vw;
+
+    font-size: 22px;
+    color: #5E81F4;
+}
+
+/* Кнопка JOIN COURSE  */
+.join {
+    padding: 1vh 2vw 1vh 2vw;
+
+    color: white;
+    background-color: #5E81F4;
+    border-radius: 10px;
+}
+
+/* Отступы в ссылках меню */
+ul.menu2 li {
+    margin-bottom: 4vh;
+    letter-spacing: 0.1rem;
+}
+
+/* Ссылки меню при наведении */
+.menu__link:hover {
+    color: black;
+}
+
+/* Меню апгрейда */
+.menu3 {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+
+    text-align: center;
+
+    background: #F5F5FB;
+    border-radius: 12px;
+}
+
+.upgrade__to {
+    margin-bottom: 2rem;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #778DAD;
+    text-align: center;
+}
+
+.upgrade {
+    padding: 1vh 2vw 1vh 2vw;
+    color: white;
+
+    background: #5E81F4;
+    border-radius: 10px;
+}
+
+/* Картинка папки */
+.frame {
+    position: relative;
+    top: -50px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 5vh 1fr 1fr;
+    align-items: start;
+    justify-content: space-around;
+    background-color: #E5E5E5;
+}
+
+.search {}
+
+.bell {}
+
+.left {}
+
+.all__courses {}
+
+.right {}
+
+.li {}
+
+.right__link {}
+
+.ui__ux {}
+
+.photo {}
+
+.animation {}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh repeat(3, 1fr);
+    align-items: space-around;
+    background-color: white;
+}
+
+.who {}
+
+.me {}
+
+.name {}
+
+.arrow {}
+
+.progress {}
+
+.progress__name {}
+
+.progress1 {}
+
+.pen {}
+
+.des {}
+
+.level {}
+
+.blue__bar {}
+
+.progress2 {}
+
+.camera {}
+
+.ph {}
+
+.green__bar {}
+
+.progress3 {}
+
+.line {}
+
+.an {}
+
+.orange__bar {}
+
+.upcoming {}
+
+.task {}
+
+.discussion {}
+
+.conv {}
+
+.disc {}
+
+.date {}
+
+
+.download {}
+
+.google {}
+
+.apple {}
