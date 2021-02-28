@@ -40,20 +40,25 @@
         </header>
         <!-- Основное меню -->
         <main class="main">
+            <!-- Поисковая строка -->
             <form action="">
                 <input class="srch__bar" type="text" name="search" placeholder="Search">
             </form>
+            <!-- Колокольчик -->
             <div class="bell">
                 <a href="#">
                     <img src="assets/images/bell.svg" alt="bell">
                 </a>
             </div>
+            <!-- Все курсы -->
             <div class="left"><a class="all__courses" href="#">All courses</a></div>
+            <!-- Ссылки на курсы -->
             <ul class="right">
                 <li class="li"><a class="right__link" href="#">Ongoing</a></li>
                 <li class="li"><a class="right__link" href="#">Favourite</a></li>
                 <li class="li"><a class="right__link" href="#">Complete</a></li>
             </ul>
+            <!-- Раздел UI/UX Design -->
             <div class="ui__ux">
                 <div class="text__ui">UI/UX Design</div>
                 <div class="lessons">20 lessons</div>
@@ -64,9 +69,10 @@
                     </a>
                 </div>
                 <div class="teacher">
-                    <img src="assets/images/teacher_ui.png" alt="josh">
+                    <a href="#"> <img src="assets/images/teacher_ui.png" alt="josh"></a>
                 </div>
             </div>
+            <!-- Раздел Photography -->
             <div class="photo">
                 <div class="photography">Photography</div>
                 <div class="lessons">12 lessons</div>
@@ -77,9 +83,10 @@
                     </a>
                 </div>
                 <div class="teacher">
-                    <img src="assets/images/teacher_lucy.png" alt="lucy">
+                    <a href="#"><img src="assets/images/teacher_lucy.png" alt="lucy"></a>
                 </div>
             </div>
+            <!-- Раздел Animation -->
             <div class="animation">
                 <div class="anim">Animation</div>
                 <div class="lessons">12 lessons</div>
@@ -89,66 +96,73 @@
                         <img src="assets/images/play.png" alt="play">
                     </a>
                 </div>
-                <div class="teacher">
-                    <img src="assets/images/teacher_petr.png" alt="petr">
+                <div class="teacher"><a href="#"><img src="assets/images/teacher_petr.png" alt="petr"></a>
                 </div>
             </div>
         </main>
         <!-- Боковая облась -->
         <aside class="sidebar">
+            <!-- Пользователь -->
             <div class="who">
-                <img class="me" src="assets/images/me.png" alt="">
-                <div class="name"> Alexa Rogue</div>
-                <img class="arrow" src="" alt="">
+                <div>
+                    <img src="assets/images/me.png" alt="me">
+                </div>
+                <div>Alexa Rogue</div>
+                <div>
+                    <img src="assets/images/arrow.svg" alt="arrow">
+                </div>
             </div>
+            <!-- Прогресс -->
             <div class="progress">
                 <div class="progress__name">Progress</div>
-                <div class="progress1">
-                    <img class="pen" src="" alt="">
-                    <div class="des">
-                        UI/UX Design<br>
-                        <span class="level">Advanced</span>
-                    </div>
-                    <img class="blue__bar" src="" alt="">
+                <img class="pen" src="assets/images/pen.svg" alt="pen">
+                <div class="des">UI/UX Design<br>
+                    <span class="level">Advanced</span>
                 </div>
-                <div class="progress2">
-                    <img class="camera" src="" alt="">
-                    <div class="ph">
-                        Photography<br>
-                        <span class="level">Intermediate</span>
-                    </div>
-                    <img class="green__bar" src="" alt="">
+                <div class="meter__ux">
+                    <span style="width: 70%;"></span>
                 </div>
-                <div class="progress3">
-                    <img class="line" src="" alt="">
-                    <div class="an">
-                        Animation<br>
-                        <span class="level">Advance</span>
-                    </div>
-                    <img class="orange__bar" src="" alt="">
+                <img class="camera" src="assets/images/camera.svg" alt="camera">
+                <div class="ph">
+                    Photography<br>
+                    <span class="level">Intermediate</span>
+                </div>
+                <div class="meter__camera">
+                    <span style="width: 40%;"></span>
+                </div>
+                <img class="line" src="assets/images/line.svg" alt="line">
+                <div class="an">
+                    Animation<br>
+                    <span class="level">Advance</span>
+                </div>
+                <div class="meter__line">
+                    <span style="width: 60%;"></span>
                 </div>
             </div>
+            <!-- Предстоящие уроки -->
             <div class="upcoming">
                 <div class="task">Upcoming Task</div>
-                <div class="discussion">
-                    <img class="conv" src="" alt="">
-                    <div class="disc">
-                        UI/UX - Discussion<br>
-                        <span class="date">27 Oct 2020, Tuesday</span>
-                    </div>
+                <img class="conv" src="assets/images/chat_2.svg" alt="chat">
+                <div class="disk">
+                    UI/UX - Discussion<br>
+                    <span class="date">27 Oct 2020, Tuesday</span>
                 </div>
-                <div class="3d">
-                    <img class="box" src="" alt="">
-                    <div class="3d__anim">
-                        Animation - 3D Animation<br>
-                        <span class="date">27 Oct 2020, Tuesday</span>
-                    </div>
+                <img class="box" src="assets/images/box.svg" alt="box">
+                <div class="anim__3d">
+                    Animation - 3D Animation<br>
+                    <span class="date">27 Oct 2020, Tuesday</span>
                 </div>
             </div>
-            <div class="download">Download Ohara<br>
-                Now!
-                <img class="google" src="" alt="">
-                <img class="apple" src="" alt="">
+            <div class="download">
+                <div class="download__ohara">Download Ohara<br>
+                    Now!
+                </div>
+                <div class="os">
+                    <a href="#"><img class="google" src="assets/images/google.png" alt="google"></a>
+                    <a href="#">
+                        <img class="apple" src="assets/images/apple.png" alt="apple">
+                    </a>
+                </div>
             </div>
         </aside>
     </div>

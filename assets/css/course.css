@@ -25,6 +25,7 @@ li {
 .nav {
     display: grid;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     grid-template-columns: minmax(max-content, 1fr);
     grid-template-rows: 1fr 3fr 1.5fr;
     align-items: space-between;
@@ -162,6 +163,7 @@ ul.menu2 li {
 .srch__bar {
     width: 100%;
     height: 5vh;
+    box-sizing: border-box;
 
     font-size: 15px;
     line-height: 18px;
@@ -171,6 +173,12 @@ ul.menu2 li {
     box-sizing: border-box;
     border: none;
     border-radius: 8px;
+
+    background-color: white;
+    background-image: url(../images/search.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
 }
 
 /* Колокольчик */
@@ -328,73 +336,195 @@ ul.menu2 li {
     line-height: 29px;
 }
 
+/* Боковая часть */
 .sidebar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh repeat(3, 1fr);
+    grid-template-rows: 10vh 1fr 0.5fr 20vh;
     align-items: space-around;
     justify-content: space-around;
 
-    margin-top: 5vh;
+    margin: 5vh 3vw 5vh 3vw;
 
     font-family: 'Inter', sans-serif;
 
     background-color: white;
 }
 
-.who {}
+/* Пользователь */
+.who {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    column-gap: 1rem;
 
-.me {}
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
 
-.name {}
+/* Блок прогресса */
+.progress {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    row-gap: 1rem;
+}
 
-.arrow {}
+.progress__name {
+    grid-area: 1 / 1 / 2 / 4;
 
-.progress {}
+    font-size: 18px;
+    line-height: 22px;
+}
 
-.progress__name {}
+.pen {
+    padding: 10px;
 
-.progress1 {}
+    background-color: #EEF2FD;
+    border-radius: 6px;
+}
 
-.pen {}
+.camera {
+    padding: 10px;
 
-.des {}
+    background-color: #D5F5FB;
+    border-radius: 6px;
+}
 
-.level {}
+.line {
+    padding: 10px;
 
-.blue__bar {}
+    background-color: #FFEFD6;
+    border-radius: 6px;
+}
 
-.progress2 {}
+.meter__ux {
+    height: 10px;
+    background-color: rgba(94, 129, 244, 0.2);
+    border-radius: 4px;
+}
 
-.camera {}
+.meter__ux>span {
+    display: block;
+    height: 100%;
+    background-color: #5E81F4;
+    border-radius: 4px;
+}
 
-.ph {}
+.meter__camera {
+    height: 10px;
+    background-color: rgba(170, 255, 251, 0.2);
+    border-radius: 4px;
+}
 
-.green__bar {}
+.meter__camera>span {
+    display: block;
+    height: 100%;
+    background-color: #47ffe6;
+    border-radius: 4px;
+}
 
-.progress3 {}
+.meter__line {
+    height: 10px;
+    background-color: rgba(255, 223, 163, 0.247);
+    border-radius: 4px;
+}
 
-.line {}
+.meter__line>span {
+    display: block;
+    height: 100%;
+    background-color: #ffac2f;
+    border-radius: 4px;
+}
 
-.an {}
+.level,
+.date {
+    padding-top: 10vh;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 
-.orange__bar {}
+    color: #83919E;
+    opacity: 0.7;
+}
 
-.upcoming {}
+.upcoming {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    row-gap: 0.5rem;
 
-.task {}
+    margin-top: 5vh;
 
-.discussion {}
+    font-size: 18px;
+    line-height: 22px;
+}
 
-.conv {}
+.task {
+    grid-column: 1 / 3;
+}
 
-.disc {}
+.disk,
+.anim__3d {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
 
-.date {}
+.conv {
+    padding: 20px;
 
+    background-color: #EEF2FD;
+    border-radius: 6px;
+}
 
-.download {}
+.box {
+    padding: 20px;
 
-.google {}
+    background-color: #FFEFD6;
+    border-radius: 6px;
+}
 
-.apple {}
+/* Загрузить Приложения */
+.download {
+    margin-top: 5vh;
+    width: 100%;
+    height: auto;
+
+    /* Собственный грид */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background-color: #F5F5FB;
+
+    background-image: url(../images/mask.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download__ohara {
+    grid-template-columns: 1 / 3;
+
+    padding-top: 2vh;
+    padding-left: 2vw;
+}
+
+.os {
+    padding-left: 2vw;
+}
+
+/* Ссылки на приложения в кружках */
+.google,
+.apple {
+    padding: 15px;
+    background: #FFFFFF;
+    border-radius: 100%;
+}
